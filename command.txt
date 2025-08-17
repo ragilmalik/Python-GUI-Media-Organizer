@@ -1,0 +1,5 @@
+pyinstaller --onefile --noconfirm --clean --noconsole --name MediaSorter --collect-all PySide6 --hidden-import shiboken6 --hidden-import PySide6 media_sorter.py
+
+
+(If pyinstaller isn’t on PATH, use this single-line fallback:)
+python -m PyInstaller --onefile --noconfirm --clean --noconsole --name MediaSorter --collect-all PySide6 --hidden-import shiboken6 --hidden-import PySide6 media_sorter.py
